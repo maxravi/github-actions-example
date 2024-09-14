@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<flow name="testFlow" doc:id="a3968c1c-4274-4e27-8064-878186e84a7d" >
+		<scheduler doc:name="Scheduler" doc:id="8cb7fca7-da59-4b43-8958-a2c20cfc0cf4" >
+			<scheduling-strategy >
+				<fixed-frequency timeUnit="DAYS"/>
+			</scheduling-strategy>
+		</scheduler>
+		<set-payload value="#[2]" doc:name="Set Payload" doc:id="e81de5eb-d661-4a6d-a95c-b9bf18e840d2" />
+		<logger level="INFO" doc:name="Logger" doc:id="2e9cb9d9-6c84-440f-853a-bb899522eefa" message="logger"/>
+	</flow>
+</mule>
