@@ -36,7 +36,7 @@
 						<java-version>11</java-version>
 						<muleVersion>${app.runtime}</muleVersion>
 						<username>${anypoint.username}</username>
-						<releaseChannel>LTS</releaseChannel
+						<releaseChannel>LTS</releaseChannel>
 						<password>${anypoint.password}</password>
 						<applicationName>${project.artifactId}</applicationName>
 						<environment>sandbox</environment>
