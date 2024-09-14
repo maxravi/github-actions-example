@@ -39,7 +39,7 @@
 						<releaseChannel>LTS</releaseChannel>
 						<password>${anypoint.password}</password>
 						<applicationName>${project.artifactId}</applicationName>
-						<environment>sandbox</environment>
+						<environment>Sandbox</environment>
 						<workerType>MICRO</workerType>
 						<region>us-east-2</region>
 						<workers>1</workers>
